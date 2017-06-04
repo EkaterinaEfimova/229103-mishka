@@ -3,11 +3,12 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Мишка</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="page-header">
       <a href="index.html" class="page-header__logo">
-        <img src="http://placehold.it/150x100" alt="Мишка">
+        <img src="http://placehold.it/120x40" alt="Мишка">
       </a>
       <nav class="main-nav">
         <span class="main-nav__toggler"></span>
@@ -58,17 +59,17 @@
           <label for="user-patronymic" class="form-order__user-name-label">Отчество:</label>
           <input id="user-patronymic" name="user-patronymic" type="text" placeholder="Отчество, если желаете">
         </fieldset>
-        <fieldset>
+        <fieldset class="form-order__item">
           <legend>Тел</legend>
           <label for="user-tel" class="form-order__tel-label">Номер телефона</label>
           <input type="tel" id="user-tel" name="user-tel" placeholder="+7 ХХХ ХХ ХХ*" required>
         </fieldset>
-        <fieldset>
+        <fieldset class="form-order__item">
           <legend>E-mail</legend>
           <label for="email" class="form-order__email-label">E-mail</label>
           <input type="email" id="email" name="user-email" placeholder="Ваш Email*" required>
         </fieldset>
-        <fieldset>
+        <fieldset class="form-order__item">
           <legend>Доп</legend>
           <textarea name="miscellaneous" rows="8" cols="80" placeholder="Опишите все ваши пожелания к заказу" class="form-order__miscellaneous-textarea"></textarea>
         </fieldset>
