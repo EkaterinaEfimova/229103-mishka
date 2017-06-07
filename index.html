@@ -3,19 +3,24 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Мишка</title>
+    <meta name="viewport" content="width=device-width,initial-scrole=1">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="page-header">
-      <a href="#" class="page-header__logo">
-        <img src="http://placehold.it/120x40" alt="Мишка">
-      </a>
+      <div class="page-header__logo">
+        <a href="#">
+          <img src="img/logo-mobile.svg" alt="Мишка" width="90" height="40">
+        </a>
+      </div>
       <nav class="main-nav">
         <span class="main-nav__toggler"></span>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list">
-            <li class="main-nav__item"><a href="/catalog.html">Каталог товаров</a></li>
-            <li class="main-nav__item"><a href="/form.html">Вязание на заказ</a></li>
+            <li class="main-nav__user-menu"><a href="/catalog.html">Каталог товаров</a></li>
+            <li class="main-nav__user-menu"><a href="/form.html">Вязание на заказ</a></li>
+          </ul>
+          <ul class="main-nav__list">
             <li class="main-nav__item main-nav__item--search"><a href="#">Поиск по сайту</a></li>
             <li class="main-nav__item main-nav__item--card"><a href="#">Корзина: пока пуста</a></li>
           </ul>
@@ -82,8 +87,8 @@
             <p>Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
             <p class="slider__comments-name">Анастасия Красильникова <a href="#" class="slider__comments-link">@misssssiskras</a></p>
           </div>
-          <button class="slider__comments-prev" type="button">Предыдущий отзыв</button>
-          <button class="slider__comments-next" type="button">Следующий отзыв</button>
+          <button class="slider__btn slider__btn--prev" type="button">Предыдущий отзыв</button>
+          <button class="slider__btn slider__btn--next" type="button">Следующий отзыв</button>
           <a href="#" class="btn">Написать</a>
         </div>
       </section>

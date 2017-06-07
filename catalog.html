@@ -3,21 +3,26 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Мишка</title>
+    <meta name="viewport" content="width=device-width,initial-scrole=1">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="page-header">
-      <a href="index.html" class="page-header__logo">
-        <img src="http://placehold.it/120x40" alt="Мишка">
-      </a>
+      <div class="page-header__logo">
+        <a href="index.html">
+          <img src="img/logo-mobile.svg" alt="Мишка" width="90" height="40">
+        </a>
+      </div>
       <nav class="main-nav">
         <span class="main-nav__toggler"></span>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list">
-            <li class="main-nav__item"><a href="/catalog.html">Каталог товаров</a></li>
-            <li class="main-nav__item"><a href="/form.html">Вязание на заказ</a></li>
-            <li class="main-nav__item"><a href="#">Поиск по сайту</a></li>
-            <li class="main-nav__item"><a href="#">Корзина: пока пуста</a></li>
+            <li class="main-nav__user-menu"><a href="/catalog.html">Каталог товаров</a></li>
+            <li class="main-nav__user-menu"><a href="/form.html">Вязание на заказ</a></li>
+          </ul>
+          <ul class="main-nav__list">
+            <li class="main-nav__item main-nav__item--search"><a href="#">Поиск по сайту</a></li>
+            <li class="main-nav__item main-nav__item--card"><a href="#">Корзина: пока пуста</a></li>
           </ul>
         </div>
       </nav>
