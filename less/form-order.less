@@ -1,0 +1,150 @@
+.form-order {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.form-order__item {
+  position: relative;
+  border: none;
+  margin: 0 auto;
+  padding: 0;
+  margin-top: 30px;
+  color: @title-color;
+  font-size: 17px;
+  line-height: 18px;
+  font-weight: 700;
+}
+.form-order__legend{
+  position: relative;
+  display: inline-block;
+  color: @color-menu;
+  text-transform: uppercase;
+  margin-bottom: 25px;
+}
+
+
+.form-order__legend::after {
+  content: '';
+  position: relative;
+  display: block;
+  vertical-align: middle;
+  width: 260px;
+  top: -9px;
+  height: 1px;
+  background-color: @color-menu;
+  z-index: 1;
+}
+.form-order__legend span {
+  position: relative;
+  display: inline-block;
+  z-index: 2;
+  background-color: @body-color;
+  padding-right: 30px;
+}
+
+.form-order__checkbox-label,
+.form-order__radio-label {
+  position: relative;
+  display: block;
+  vertical-align: middle;
+  font-size: 17px;
+  line-height: 18px;
+  color: @title-color;
+  min-height: 50px;
+  padding: 10px 40px 10px 65px;
+  margin-bottom: 15px;
+}
+
+.form-order__checkbox-label::before,
+.form-order__radio-label::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 35px;
+  height: 35px;
+  border: 2px solid @font-color;
+}
+
+.form-order__radio-label::before {
+  border-radius: 50%;
+}
+
+.form-order__checkbox-input,
+.form-order__radio-input {
+  position: absolute;
+  width: 0;
+  height: 0;
+  opacity: 0;
+}
+
+.form-order__miscellaneous-textarea {
+  width: 234px;
+  padding: 10px;
+  border: 2px solid @font-color;
+}
+
+.form-order__email-label,
+.form-order__tel-label {
+  width: 0;
+  height: 0;
+  opacity: 0;
+}
+
+input[type="checkbox"]:checked + label::after,
+input[type="radio"]:checked + label::after {
+  content: '';
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 20px;
+  height: 20px;
+}
+
+input[type="radio"]:checked + label::after {
+  border-radius: 50%;
+  background-color: @color-menu;
+}
+
+input[type="checkbox"]:checked + label::after {
+  background-image: url(img/icon-tick.svg);
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
+::-webkit-input-placeholder {
+  font-size: 17px;
+  line-height: 18px;
+  color: @font-color;
+  opacity: 0.3;
+}
+::-moz-placeholder          {
+  font-size: 17px;
+  line-height: 18px;
+  color: @font-color;
+  opacity: 0.3;
+}/* Firefox 19+ */
+:-moz-placeholder           {
+  font-size: 17px;
+  line-height: 18px;
+  color: @font-color;
+  opacity: 0.3;
+}/* Firefox 18- */
+:-ms-input-placeholder      {
+  font-size: 17px;
+  line-height: 18px;
+  color: @font-color;
+  opacity: 0.3;
+}
+
+.form-order__tel-input,
+.form-order__email-input,
+.form-order__user-name-input {
+  display: block;
+  width: 260px;
+  min-height: 45px;
+  margin-bottom: 20px;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 2px solid @font-color;
+}
