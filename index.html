@@ -8,22 +8,29 @@
   </head>
   <body>
     <header class="page-header">
-      <div class="page-header__logo">
-        <a href="#">
-          <img src="img/logo-mobile.svg" alt="Мишка" width="90" height="40">
-        </a>
-      </div>
       <nav class="main-nav">
         <span class="main-nav__toggler"></span>
         <div class="main-nav__wrapper">
-          <ul class="main-nav__list">
+          <ul class="main-nav__list main-nav__logo">
+            <li class="main-nav__header-logo">
+              <a href="#">
+                <img src="img/logo-mobile.svg" alt="Мишка" width="90" height="40">
+              </a>
+            </li>
+          </ul>
+          <ul class="main-nav__list main-nav__user">
             <li class="main-nav__user-menu"><a href="/catalog.html">Каталог товаров</a></li>
             <li class="main-nav__user-menu"><a href="/form.html">Вязание на заказ</a></li>
           </ul>
-          <ul class="main-nav__list">
+          <ul class="main-nav__list main-nav__items">
             <li class="main-nav__item main-nav__item--search"><a href="#">Поиск по сайту</a></li>
             <li class="main-nav__item main-nav__item--card"><a href="#">Корзина: пока пуста</a></li>
           </ul>
+          <ul class="main-nav__list main-nav__action">
+            <li class="main-nav__action-link"><a href="#">Новые поступления</a></li>
+            <li class="main-nav__action-link"><a href="#">Распродажа</a></li>
+          </ul>
+          <div class="main-nav__info">Бесплатная доставка по России</div>
         </div>
       </nav>
       <div class="page-header__slogan page-header__slogan--main">
@@ -38,30 +45,34 @@
     </header>
     <main>
       <section class="page-promo">
-        <h1 class="page-promo__title">Вязаные корзинки</h1>
-        <h2 class="page-promo__sublitle">товар недели</h2>
-        <p>Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
-        <ul class="page-promo__desk-list">
-          <li class="page-promo__desk-item">
-            <span class="page-promo__item-name">Цвет:</span>
-            <span class="page-promo__item-value">«Тиффани»/серый</span>
-          </li>
-          <li class="page-promo__desk-item">
-            <span class="page-promo__item-name">Диаметр:</span>
-            <span class="page-promo__item-value">25 см</span>
-          </li>
-          <li class="page-promo__desk-item">
-            <span class="page-promo__item-name">Высота:</span>
-            <span class="page-promo__item-value">15 см</span>
-          </li>
-        </ul>
-        <div class="promo-page__goods-img">
-          <img src="img/triple-set-mobile@1x.jpg" alt="Вязаные корзинки">
+        <div class="page-promo__headline">
+          <h1 class="page-promo__title">Вязаные корзинки</h1>
+          <h2 class="page-promo__sublitle">товар недели</h2>
         </div>
-        <div class="promo-page__price">
-          Цена: 990 руб.
+        <div class="page-pomo__text">
+          <p>Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
+          <ul class="page-promo__desk-list">
+            <li class="page-promo__desk-item">
+              <span class="page-promo__item-name">Цвет:</span>
+              <span class="page-promo__item-value">«Тиффани»/серый</span>
+            </li>
+            <li class="page-promo__desk-item">
+              <span class="page-promo__item-name">Диаметр:</span>
+              <span class="page-promo__item-value">25 см</span>
+            </li>
+            <li class="page-promo__desk-item">
+              <span class="page-promo__item-name">Высота:</span>
+              <span class="page-promo__item-value">15 см</span>
+            </li>
+          </ul>
+          <div class="promo-page__goods-img">
+            <img src="img/triple-set-mobile@1x.jpg" alt="Вязаные корзинки">
+          </div>
+          <div class="promo-page__price">
+            Цена: 990 руб.
+          </div>
+          <a href="#" class="btn">ЗАКАЗАТЬ</a>
         </div>
-        <a href="#" class="btn">ЗАКАЗАТЬ</a>
       </section>
       <section class="page-promo">
         <h1 class="page-promo__title">Коротко о нас:</h1>
@@ -89,7 +100,7 @@
           </div>
           <button class="slider__btn slider__btn--prev" type="button">Предыдущий отзыв</button>
           <button class="slider__btn slider__btn--next" type="button">Следующий отзыв</button>
-          <a href="#" class="btn">Написать</a>
+          <a href="#" class="btn btn__slider-write">Написать</a>
         </div>
       </section>
       <div class="contacts">
@@ -108,18 +119,26 @@
         </div>
         <div class="contacts__map">
         </div>
-        <a href="#" class="btn">Напишите нам</a>
+        <a href="#" class="btn btn__contacts-write">Напишите нам</a>
       </div>
     </main>
     <footer class="page-footer">
-      <span class="social‐links">
-        <a class="social‐link social‐link‐‐vk" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
-        <a class="social‐link social‐link‐‐fb" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
-        <a class="social‐link social‐link‐‐in" href="https://www.instagram.com/htmlacademy">Мы в Инстаграме</a>
-      </span>
-      <p class="page‐footer__copyright">Разработано:
-        <a class="page‐footer__copyright‐link" href="#">в htmlacademy</a>
-      </p>
+      <div class="page-footer__wrapper">
+        <div class="page-footer__logo">
+          <a href="#">
+            <img src="img/logo-mobile.svg" alt="Мишка" width="90" height="40">
+          </a>
+        </div>
+        <span class="social‐links">
+          <a class="social‐link social‐link‐‐vk" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
+          <a class="social‐link social‐link‐‐fb" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
+          <a class="social‐link social‐link‐‐in" href="https://www.instagram.com/htmlacademy">Мы в Инстаграме</a>
+        </span>
+        <p class="page‐footer__copyright">Разработано:
+          <a class="page‐footer__copyright‐link" href="#">в htmlacademy</a>
+        </p>
+      </div>
     </footer>
+</script>
   </body>
 </html>

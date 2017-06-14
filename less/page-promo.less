@@ -14,6 +14,7 @@ padding: 0 30px;
   font-size: 17px;
   line-height: 20px;
   font-weight: 700;
+  text-align: center;
 }
 
 .page-promo__desk-list {
@@ -44,4 +45,112 @@ padding: 0 30px;
   font-size: 17px;
   line-height: 20px;
   font-weight: 700;
+}
+
+.page-promo__desk-list {
+ display: table;
+}
+.page-promo__desk-item {
+  display: table-row;
+}
+.page-promo__item-name,
+.page-promo__item-value {
+  display: table-cell;
+  text-align: left;
+  vertical-align: top;
+  font-size: 15px;
+  line-height: 30px;
+  color: @font-color;
+}
+.page-promo__item-name {
+  width: 90px;
+}
+
+@media @tablet-widths {
+  .page-promo {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    .container-fluid();
+    margin: 0 auto;
+    padding: 0 50px;
+  }
+  .page-promo__headline {
+    display: flex;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    width: 668px;
+    padding: 50px 0;
+  }
+  .page-promo__title {
+    margin: 0;
+    margin-right: auto;
+    font-size: 43px;
+    line-height: 50px;
+  }
+  .page-promo__sublitle {
+    margin: 0;
+    margin-left: auto;
+    width: 100px;
+  }
+  .page-pomo__text {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-height: 450px;
+    flex-basis: 50%;
+    padding: 0 40px;
+  }
+  .page-pomo__text p {
+    width: 300px;
+    margin: 0;
+    margin-bottom: 30px;
+  }
+
+  .promo-page__goods-img {
+order: 4;
+  }
+  .page-promo__features {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    height: 470px;
+  }
+  .page-promo__features-item {
+    width: 300px;
+    padding: 90px 30px 10px 0;
+  }
+
+}
+@media @desktop-widths {
+  .page-promo__headline {
+    position: relative;
+    padding: 0;
+  }
+  .page-promo__title {
+    margin: 0;
+    padding: 50px 50px 50px 225px;
+    font-size: 53px;
+    line-height: 57px;
+    z-index: 2;
+  }
+  .page-promo__sublitle {
+    content: '';
+    position: absolute;
+    top: 58px;
+    left: 46px;
+    margin: 0;
+    width: 100px;
+    padding: 0 40px;
+  }
+  .page-pomo__text p,
+  .page-promo__desk-list,
+  .promo-page__price {
+    padding-left: 190px;
+    width: 350px;
+  }
+  .page-promo__features {
+    padding: 0 225px;
+    margin-bottom: 85px;
+  }
 }

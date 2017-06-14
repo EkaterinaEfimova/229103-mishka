@@ -21,3 +21,49 @@
   line-height: 24px;
   color: @font-color;
 }
+@media @tablet-widths {
+  .video {
+    display: flex;
+    flex-direction: column;
+    width: 668px;
+  }
+  .video__block {
+    order: -1;
+    width: 668px;
+    height: 455px;
+  }
+  .video__title {
+    font-size: 20px;
+    line-height: 24px;
+    padding: 40px 167px 30px 100px;
+  }
+  .video p {
+    font-size: 15px;
+    line-height: 30px;
+    margin: auto;
+    margin-bottom: 40px;
+    padding: 0 35px;
+    width: 580px;
+  }
+}
+@media @desktop-widths {
+  .video {
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 450px;
+    width: 1050px;
+  }
+  .video__title {
+    margin: 0;
+    padding: 90px 130px 35px 70px;
+  }
+  .video__block {
+    width: 680px;
+    height: 456px;
+  }
+  .video p {
+    width: 165px;
+    margin: 0 130px 35px 70px;
+
+  }
+}
