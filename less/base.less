@@ -17,6 +17,8 @@
 }
 
 body {
+  margin: 0 auto;
+  min-width: 320px;
   background-color: @body-color;
   font-family: "Open Sans", "Arial", "Helvetica", sans-serif;
   font-size: 17px;
@@ -43,4 +45,14 @@ img {
 
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+@media @tablet-widths {
+  body {
+    min-width: 768px;
+  }
+}
+@media @desktop-widths {
+  body {
+    min-width: 1150px;
+  }
 }

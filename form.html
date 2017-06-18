@@ -8,19 +8,17 @@
   </head>
   <body>
     <header class="page-header">
-      <nav class="main-nav">
+      <div class="page-header__logo">
+        <a href="/index.html">
+          <img src="img/logo-mobile.svg" alt="Мишка" width="90" height="40">
+        </a>
+      </div>
+      <nav class="main-nav main-nav--closed main-nav--nojs">
         <span class="main-nav__toggler"></span>
         <div class="main-nav__wrapper">
-          <ul class="main-nav__list main-nav__logo">
-            <li class="main-nav__header-logo">
-              <a href="index.html">
-                <img src="img/logo-mobile.svg" alt="Мишка" width="90" height="40">
-              </a>
-            </li>
-          </ul>
           <ul class="main-nav__list main-nav__user">
-            <li class="main-nav__user-menu"><a href="/catalog.html">Каталог товаров</a></li>
-            <li class="main-nav__user-menu"><a href="/form.html">Вязание на заказ</a></li>
+            <li class="main-nav__user-menu main-nav__user-menu--catalog"><a href="/catalog.html" class="main-nav__link-catalog">Каталог товаров</a></li>
+            <li class="main-nav__user-menu main-nav__user-menu--order"><a href="/form.html" class="main-nav__link-order">Вязание на заказ</a></li>
           </ul>
           <ul class="main-nav__list main-nav__items">
             <li class="main-nav__item main-nav__item--search"><a href="#">Поиск по сайту</a></li>
@@ -118,5 +116,21 @@
         </p>
       </div>
     </footer>
+    <script>
+      var navMain = document.querySelector('.main-nav');
+      var navToggle = document.querySelector('.main-nav__toggler');
+
+      navMain.classList.remove('main-nav--nojs');
+
+      navToggle.addEventListener('click', function() {
+        if (navMain.classList.contains('main-nav--closed')) {
+          navMain.classList.remove('main-nav--closed');
+          navMain.classList.add('main-nav--opened');
+        } else {
+          navMain.classList.add('main-nav--closed');
+          navMain.classList.remove('main-nav--opened');
+        }
+      });
+    </script>
   </body>
   </html>

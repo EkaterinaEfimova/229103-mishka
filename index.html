@@ -8,19 +8,17 @@
   </head>
   <body>
     <header class="page-header">
-      <nav class="main-nav">
+      <div class="page-header__logo">
+        <a>
+          <img src="img/logo-mobile.svg" alt="Мишка" width="90" height="40">
+        </a>
+      </div>
+      <nav class="main-nav main-nav--closed main-nav--nojs">
         <span class="main-nav__toggler"></span>
         <div class="main-nav__wrapper">
-          <ul class="main-nav__list main-nav__logo">
-            <li class="main-nav__header-logo">
-              <a href="#">
-                <img src="img/logo-mobile.svg" alt="Мишка" width="90" height="40">
-              </a>
-            </li>
-          </ul>
           <ul class="main-nav__list main-nav__user">
-            <li class="main-nav__user-menu"><a href="/catalog.html">Каталог товаров</a></li>
-            <li class="main-nav__user-menu"><a href="/form.html">Вязание на заказ</a></li>
+            <li class="main-nav__user-menu main-nav__user-menu--catalog"><a href="/catalog.html" class="main-nav__link-catalog">Каталог товаров</a></li>
+            <li class="main-nav__user-menu main-nav__user-menu--order"><a href="/form.html" class="main-nav__link-order">Вязание на заказ</a></li>
           </ul>
           <ul class="main-nav__list main-nav__items">
             <li class="main-nav__item main-nav__item--search"><a href="#">Поиск по сайту</a></li>
@@ -38,8 +36,8 @@
       </div>
       <div class="page-header__catalog">
         <ul class="page-header__catalog-list">
-          <li class="page-header__catalog-item page-header__catalog-item--accessory"><a href="#">Предметы интерьера</a></li>
-          <li class="page-header__catalog-item page-header__catalog-item--toy"><a href="#">Детские игрушки</a></li>
+          <li class="page-header__catalog-item page-header__catalog-item--accessory"><a href="#" class="page-header__catalog-link page-header__catalog-link--accessory">Предметы интерьера</a></li>
+          <li class="page-header__catalog-item page-header__catalog-item--toy"><a href="#" class="page-header__catalog-link page-header__catalog-link--toy">Детские игрушки</a></li>
         </ul>
       </div>
     </header>
@@ -65,10 +63,10 @@
               <span class="page-promo__item-value">15 см</span>
             </li>
           </ul>
-          <div class="promo-page__goods-img">
+          <div class="page-promo__goods-img">
             <img src="img/triple-set-mobile@1x.jpg" alt="Вязаные корзинки">
           </div>
-          <div class="promo-page__price">
+          <div class="page-promo__price">
             Цена: 990 руб.
           </div>
           <a href="#" class="btn">ЗАКАЗАТЬ</a>
@@ -84,6 +82,7 @@
           <li class="page-promo__features-item page-promo__features-item--icon5">Поддержка отечественного производителя</li>
           <li class="page-promo__features-item page-promo__features-item--icon6">Поставляется в подарочной упаковке</li>
         </ul>
+      </section>
         <div class="slider">
           <h2 class="slider__comments-title">Отзывы</h2>
           <div class="slider__comments">
@@ -102,7 +101,6 @@
           <button class="slider__btn slider__btn--next" type="button">Следующий отзыв</button>
           <a href="#" class="btn btn__slider-write">Написать</a>
         </div>
-      </section>
       <div class="contacts">
         <h3>Контакты</h3>
         <div class="contacts__desc">
@@ -129,16 +127,31 @@
             <img src="img/logo-mobile.svg" alt="Мишка" width="90" height="40">
           </a>
         </div>
-        <span class="social‐links">
-          <a class="social‐link social‐link‐‐vk" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
-          <a class="social‐link social‐link‐‐fb" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
-          <a class="social‐link social‐link‐‐in" href="https://www.instagram.com/htmlacademy">Мы в Инстаграме</a>
-        </span>
+        <div class="social‐links">
+        <a class="social‐link social‐link‐‐in" href="#">Мы в Инстаграме</a>
+          <a class="social‐link social‐link‐‐fb" href="#">Мы в Фейсбуке</a>
+            <a class="social‐link social‐link‐‐tw" href="#">Мы в Твиттере</a>
+        </div>
         <p class="page‐footer__copyright">Разработано:
           <a class="page‐footer__copyright‐link" href="#">в htmlacademy</a>
         </p>
       </div>
     </footer>
-</script>
+    <script>
+      var navMain = document.querySelector('.main-nav');
+      var navToggle = document.querySelector('.main-nav__toggler');
+
+      navMain.classList.remove('main-nav--nojs');
+
+      navToggle.addEventListener('click', function() {
+        if (navMain.classList.contains('main-nav--closed')) {
+          navMain.classList.remove('main-nav--closed');
+          navMain.classList.add('main-nav--opened');
+        } else {
+          navMain.classList.add('main-nav--closed');
+          navMain.classList.remove('main-nav--opened');
+        }
+      });
+    </script>
   </body>
 </html>
