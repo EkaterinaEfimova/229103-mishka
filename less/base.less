@@ -1,60 +1,46 @@
-@font-face {
-  font-weight: normal;
-  font-family: "Open Sans";
-  font-style: normal;
-
-  src: url("fonts/opensans.woff2") format("woff2"),
-  url("fonts/opensans.woff") format("woff");
-}
-
-@font-face {
-  font-weight: 700;
-  font-family: "Open Sans";
-  font-style: normal;
-
-  src: url("fonts/opensansbold.woff2") format("woff2"),
-  url("fonts/.woff") format("woff");
-}
-
-body {
-  margin: 0 auto;
-  min-width: 320px;
-  background-color: @body-color;
-  font-family: "Open Sans", "Arial", "Helvetica", sans-serif;
-  font-size: 17px;
-  line-height: 30px;
+  @font-face {
+    font-weight: normal;
+    font-family: "Open Sans";
+    font-style: normal;
+    src: url("fonts/opensans.woff2") format("woff2"),
+    url("fonts/opensans.woff") format("woff");
   }
 
-a {
-  text-decoration: none;
-  color: @font-color;
-}
-img {
-  max-width: 100%;
-  height: auto;
-}
-.visually-hidden{
-  position: absolute;
+  @font-face {
+    font-weight: 700;
+    font-family: "Open Sans";
+    font-style: normal;
+    src: url("fonts/opensansbold.woff2") format("woff2"),
+    url("fonts/.woff") format("woff");
+  }
 
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  padding: 0;
+  body {
+    margin: 0 auto;
+    min-width: 320px;
+    background-color: @body-color;
+    font-family: "Open Sans", "Arial", "Helvetica", sans-serif;
+    font-size: 17px;
+    line-height: 30px;
+  }
 
-  border: 0;
+  a {
+    text-decoration: none;
+    color: @font-color;
+  }
 
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
 @media @tablet-widths {
   body {
     min-width: 768px;
   }
-
 }
+
 @media @desktop-widths {
   body {
     min-width: 1150px;
   }
-
 }
