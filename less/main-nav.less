@@ -176,10 +176,11 @@
 
 @media @tablet-widths {
   .main-nav {
+    .container();
     position: relative;
-    .container-fluid();
     flex-direction: row;
     z-index: 4;
+    padding: 0 50px;
   }
 
 .main-nav__wrapper {
@@ -187,7 +188,9 @@
     flex-direction: row;
     flex-wrap: wrap;
     width: 668px;
+    margin: 0 auto;
     margin-top: -80px;
+
   }
 
 
@@ -241,15 +244,21 @@
       color: @font-color;
       opacity: 1;
       order: 5;
+      margin-left: auto;
       padding: 20px 0;
 z-index: 5;
 
 }
 }
 @media @desktop-widths {
+  .main-nav {
+    margin: 0 auto;
+    padding: 0;
+  }
   .main-nav__wrapper{
     position: relative;
     .container();
+    margin: auto;
     margin-top: 0;
   }
   .main-nav__wrapper::before {
@@ -319,5 +328,6 @@ z-index: 5;
   }
   .main-nav__info {
     margin-left: auto;
+    padding-right: 50px;
   }
 }
