@@ -1,42 +1,125 @@
-.contacts h3 {
-  padding: 0 30px;
-  font-weight: 700;
-  font-size: 18px;
+  .contacts {
+    padding-top: 40px;
+  }
+
+  .contacts h3 {
+    width: 260px;
+    margin: 0 auto;
+    font-weight: 700;
+    font-size: 18px;
+    color: @title-color;
+    line-height: 30px;
+  }
+
+  .contacts__map {
+    min-height: 460px;
+    margin-bottom: 38px;
+    background-color: #eae6dd;
+    background-image: url(../img/map-mobile@1x.jpg);
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+  }
+
+  .contacts__desc {
+    display: table;
+    width: 260px;
+    margin: 0 auto;
+    padding: 0 30px;
+    padding-top: 30px;
+  }
+
+  .contacts__info {
+    display: table-row;
+  }
+
+  .contacts__info span {
+    display: table-cell;
+    text-align: left;
+    vertical-align: top;
+    padding-bottom: 40px;
+    font-size: 15px;
+    line-height: 30px;
+    color: @font-color;
+  }
+
+  .contacts__info-subtitle {
+    width: 75px;
+  }
+
+  .contacts__info-text a {
+    padding-bottom: 5px;
+    border-bottom: 1px solid @color-menu;
+  }
+
+@media @tablet-widths {
+  .contacts {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    .container-fluid();
+    margin: 60px auto;
+  }
+
+  .contacts h3 {
+    position: relative;
+    width: 668px;
+    margin: 0 auto;
+    padding: 40px 0;
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  .contacts h3::after {
+    position: absolute;
+    content: '';
+    top: 20px;
+    right: 0;
+    width: 52px;
+    height: 85px;
+    background-image: url(/img/icon-flag.svg);
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+  }
+
+  .contacts__desc {
+    display: flex;
+    width: 668px;
+  }
+
+  .contacts__info {
+    width: 330px;
+  }
 }
 
+@media @desktop-widths {
+  .contacts {
+    max-height: 465px;
+    padding-top: 65px;
+  }
 
+  .contacts h3 {
+    width: 260px;
+    font-size: 53px;
+    line-height: 57px;
+    margin: 0 0 0 225px;
+  }
 
-.contacts__map {
-  height: 460px;
-  margin-bottom: 38px;
-  background-image: url(../img/map-mobile@1x.jpg);
-  background-position: 50% 50%;
-  background-repeat: no-repeat;
-}
+  .contacts h3::after {
+    top: 20px;
+    left: -113px;;
+  }
 
-.contacts__desc {
-  display: table;
-  margin: 0 auto;
-  padding: 0 30px;
-}
-.contacts__info {
-  display: table-row;
-}
+  .contacts__desc {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0 60px 0 225px;
+    width: 280px;
+  }
 
-.contacts__info span {
-  display: table-cell;
-  text-align: left;
-  vertical-align: top;
-  padding-bottom: 40px;
-  font-size: 15px;
-  line-height: 30px;
-  color: @font-color;
-}
-.contacts__info-subtitle {
-  width: 75px;
-}
-
-.contacts__info-text a {
-  padding-bottom: 5px;
-  border-bottom: 1px solid @color-menu;
+  .contacts__map {
+    width: 525px;
+  margin-left: -40px;
+  }
 }

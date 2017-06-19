@@ -1,18 +1,69 @@
-.btn {
-  display: block;
-  margin: 0 auto;
-  border: 2px solid @font-color;
-  width: 234px;
-  padding: 13px;
-  text-align: center;
-  color: @font-color;
-  font-weight: 700;
-  text-transform: uppercase;
-  background-color: @body-color;
+  .btn {
+    display: block;
+    margin: 0 auto;
+    border: 2px solid @font-color;
+    width: 260px;
+    padding: 13px;
+    text-align: center;
+    color: @font-color;
+    font-weight: 700;
+    text-transform: uppercase;
+    background-color: @body-color;
+  }
+
+  .btn--basket {
+    width: 146px;
+    padding: 16px 20px;
+    margin-bottom: 30px;
+  }
+
+@media @tablet-widths {
+  .btn__order-popup {
+    width: 258px;
+    margin: 0;
+    margin-right: 40px;
+  }
+
+  .btn__slider-write {
+    position: absolute;
+    top: 70px;
+    right: 65px;
+  }
+
+  .btn--basket {
+    margin: auto;
+    margin-bottom: 45px;
+    padding: 15px 210px;
+  }
+
+  .btn__form {
+    position: absolute;
+    left: 0px;
+    bottom: 15px;
+    order: 1;
+    width: 227px;
+  }
 }
 
-.btn--basket {
-  width: 146px;
-  padding: 16px 20px;
-  margin-bottom: 30px;
+@media @desktop-widths {
+  .btn__order-popup {
+    margin: 0 40px 0 175px;
+  }
+
+  .btn__contacts-write {
+    position: absolute;
+    bottom: 0;
+    left: 225px;
+  }
+
+  .btn--basket {
+    padding: 15px 35px;
+    margin: 0 58px 0 70px;
+  }
+
+  .btn__form {
+    position: absolute;
+    left: 170px;
+    bottom: 20px;
+  }
 }
