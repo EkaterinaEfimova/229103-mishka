@@ -1,5 +1,5 @@
   .page-footer {
-    margin-top: 40px;
+    margin-top: 56px;
     background-color: @footer-color;
   }
 
@@ -24,30 +24,30 @@
     content: '';
     width: 30px;
     height: 30px;
-    top: 0;
+    top: 3px;
     background-position: 50% 50%;
     background-repeat: no-repeat;
   }
 
   .social‐link‐‐in::before {
-    left: 10;
+    left: -3px;
     background-image: url(/img/icon-insta.svg);
   }
 
   .social‐link‐‐fb::before {
-    left: 50px;
+    left: 51px;
     background-image: url(/img/icon-fb.svg);
   }
 
   .social‐link‐‐tw::before {
-    left: 100px;
+    left: 105px;
     background-image: url(/img/icon-twitter.svg);
   }
 
   .page‐footer__copyright {
     border-top: 1px solid @border-color;
-    padding-top: 28px;
-    padding-left: 30px;
+    padding-top: 37px;
+    padding-left: 35px;
     padding-bottom: 30px;
     font-size: 19px;
     line-height: 18px;
@@ -63,10 +63,10 @@
   .page‐footer__copyright‐link::after {
     position: absolute;
     content: '';
-    width: 30px;
-    height: 30px;
-    top: -22px;
-    right: -40px;
+    width: 45px;
+    height: 41px;
+    top: -24px;
+    right: -54px;
     background-image: url(/img/htmlacademy.svg);
     background-position: 50% 50%;
     background-repeat: no-repeat;
@@ -78,6 +78,7 @@
 
 @media @tablet-widths {
   .page-footer {
+    margin-top: 63px;
     margin-bottom: 0;
   }
 
@@ -89,21 +90,25 @@
   .page-footer__logo {
     display: block;
     height: 60px;
-    padding: 50px 50px 0 50px;
+    padding: 50px 50px 0 0;
     margin: 0;
     margin-right: auto;
   }
 
   .social‐links {
-    margin: 30px 0;
+    margin: 33px 27px;
   }
 
   .page‐footer__copyright {
-    padding: 40px 60px;
+    padding: 44px 47px;
     border: none;
   }
 }
 @media @desktop-widths {
+  .page-footer {
+    height: 142px;
+    margin-top: 75px;
+  }
   .page-footer__wrapper {
     position: relative;
     display: flex;
@@ -113,6 +118,10 @@
   .social‐links {
     position: absolute;
     top: 0;
-    left: 43%;
+    left: 424px;
+  }
+
+  .page‐footer__copyright {
+    padding: 41px 47px;
   }
 }

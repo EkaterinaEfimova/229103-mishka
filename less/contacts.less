@@ -1,5 +1,6 @@
   .contacts {
-    padding-top: 40px;
+    padding-top: 46px;
+    margin-bottom: -18px;
   }
 
   .contacts h3 {
@@ -25,7 +26,8 @@
     width: 260px;
     margin: 0 auto;
     padding: 0 30px;
-    padding-top: 30px;
+    padding-top: 26px;
+    padding-bottom: 5px;
   }
 
   .contacts__info {
@@ -36,14 +38,14 @@
     display: table-cell;
     text-align: left;
     vertical-align: top;
-    padding-bottom: 40px;
+    padding-bottom: 30px;
     font-size: 15px;
     line-height: 30px;
     color: @font-color;
   }
 
   .contacts__info-subtitle {
-    width: 75px;
+    width: 78px;
   }
 
   .contacts__info-text a {
@@ -65,7 +67,8 @@
     position: relative;
     width: 668px;
     margin: 0 auto;
-    padding: 40px 0;
+    padding: 50px 0;
+    padding-bottom: 22px;
     font-size: 43px;
     line-height: 50px;
   }
@@ -73,7 +76,7 @@
   .contacts h3::after {
     position: absolute;
     content: '';
-    top: 20px;
+    top: 33px;
     right: 0;
     width: 52px;
     height: 85px;
@@ -82,44 +85,59 @@
     background-repeat: no-repeat;
   }
 
+  .contacts__info span {
+    font-size: 17px;
+    line-height: 30px;
+  }
+
   .contacts__desc {
     display: flex;
     width: 668px;
   }
 
   .contacts__info {
-    width: 330px;
+    width: 335px;
+    padding-bottom: 22px;
+  }
+
+  .contacts__map {
+    margin-bottom: 52px;
   }
 }
 
 @media @desktop-widths {
   .contacts {
     max-height: 465px;
-    padding-top: 65px;
+    padding-top: 22px;
   }
 
   .contacts h3 {
     width: 260px;
     font-size: 53px;
     line-height: 57px;
-    margin: 0 0 0 225px;
+    margin: 0 0 0 220px;
   }
 
   .contacts h3::after {
-    top: 20px;
-    left: -113px;;
+    top: 40px;
+    left: -108px;
   }
 
   .contacts__desc {
     display: flex;
     flex-direction: column;
     margin: 0;
-    padding: 0 60px 0 225px;
+    padding: 27px 60px 0 225px;
     width: 280px;
+  }
+
+  .contacts__info span {
+    padding-bottom: 8px;
   }
 
   .contacts__map {
     width: 525px;
-  margin-left: -40px;
+    margin-left: -40px;
+    margin-top: -21px;
   }
 }

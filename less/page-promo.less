@@ -1,7 +1,7 @@
   .page-promo {
     width: 260px;
     margin: 0 auto;
-    padding: 35px 0;
+    padding: 27px 0 42px;
   }
 
   .page-promo__title {
@@ -17,6 +17,14 @@
     font-size: 17px;
     line-height: 20px;
     font-weight: 700;
+    margin-top: 5px;
+    margin-bottom: 23px;
+  }
+
+  .page-pomo__text p {
+    font-size: 15px;
+    line-height: 24px;
+    margin-bottom: 23px;
   }
 
   .page-promo__desk-list {
@@ -25,14 +33,9 @@
     list-style: none;
   }
 
-  .page-promo__desk-item {
-    height: 40px;
-    border-bottom: 1px solid @border-color;
-  }
-
   .page-promo__price {
-    height: 70px;
-    padding-top: 30px;
+    height: 53px;
+    padding-top: 21px;
     text-align: center;
     font-weight: 700;
   }
@@ -45,7 +48,7 @@
 
   .page-promo__features-item {
     position: relative;
-    padding-top: 85px;
+    padding-top: 84px;
     font-size: 17px;
     line-height: 20px;
     font-weight: 700;
@@ -56,8 +59,8 @@
     content: '';
     width: 45px;
     height: 45px;
-    top: 25px;
-    left: 0;
+    top: 28px;
+    left: 3px;
     background-position: 50% 50%;
     background-repeat: no-repeat;
   }
@@ -88,11 +91,13 @@
 
   .page-promo__desk-list {
    display: table;
-   margin-bottom: 28px;
+   margin-bottom: 26px;
   }
 
   .page-promo__desk-item {
     display: table-row;
+    height: 39px;
+    border-bottom: 1px solid @border-color;
   }
 
   .page-promo__item-name,
@@ -107,7 +112,7 @@
   }
 
   .page-promo__item-name {
-    width: 90px;
+    width: 105px;
   }
 
   .page-promo__item-value{
@@ -140,7 +145,7 @@
   }
 
   .page-promo__title {
-    margin: 50px 0;
+    margin: 48px 0;
     margin-right: auto;
     font-size: 43px;
     line-height: 50px;
@@ -161,10 +166,25 @@
   }
 
   .page-pomo__text p {
+    font-size: 17px;
+    line-height: 30px;
     width: 300px;
     margin: 0;
-    margin-bottom: 30px;
+    margin-bottom: 39px;
     margin-right: 40px;
+  }
+
+  .page-promo__item-name {
+    width: 98px;
+  }
+
+  .page-promo__price {
+    font-size: 20px;
+    line-height: 24px;
+    padding-top: 31px;
+    padding-left: 72px;
+    text-align: left;
+    height: 58px;
   }
 
   .page-promo__item-value {
@@ -174,16 +194,14 @@
   .page-promo__goods-img {
     width: 334px;
     height: 405px;
+    margin-top: 9px;
     order: 4;
-    margin-left: -25px;
-  }
-
-  .page-promo__price {
-    padding-top: 8px;
+    margin-left: -6px;
   }
 
   .page-promo:first-of-type {
-    margin-bottom: 50px;
+    padding-bottom: 69px;
+    margin-bottom: 0;
   }
 
   .page-promo:last-of-type {
@@ -194,12 +212,18 @@
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    height: 400px;
+    height: 470px;
   }
 
   .page-promo__features-item {
-    width: 300px;
-    padding: 80px 30px 10px 0;
+    font-size: 20px;
+    line-height: 22px;
+    width: 336px;
+    padding: 55px 0 57px 0;
+  }
+
+  .page-promo__features-item::before {
+    top: -3px;
   }
 }
 @media @desktop-widths {
@@ -222,8 +246,8 @@
 
   .page-promo__headline .page-promo__title {
     position: absolute;
-    top: 0;
-    left: 175px;
+    top: 8px;
+    left: 173px;
     width: 100%;
     z-index: 2;
     padding: 0;
@@ -232,13 +256,13 @@
   .page-promo__sublitle {
     content: '';
     position: absolute;
-    top: 10px;
-    left: 40px;
+    top: 18px;
+    left: 23px;
     width: 120px;
   }
 
   .page-pomo__text {
-    max-height: 635px;
+    max-height: 640px;
   }
 
   .page-pomo__text p,
@@ -248,25 +272,33 @@
   }
 
   .page-pomo__text p {
-    padding-top: 150px;
+    padding-top: 162px;
   }
 
   .page-promo__desk-list {
-    padding-top: 20px;
+    padding-top: 13px;
   }
 
   .page-promo__price {
-    padding-top: 67px;
-    padding-left: 67px;
+    padding-top: 83px;
+    padding-left: 250px;
   }
 
   .page-promo__features {
     padding: 0 175px;
-    margin-bottom: 85px;
+  }
+
+  .page-promo__features-item {
+    width: 353px;
   }
 
   .page-promo__goods-img {
     width: 525px;
     height: 635px;
+    margin-left: -19px;
+  }
+
+  .page-promo:first-of-type {
+    padding-bottom: 37px;
   }
 }

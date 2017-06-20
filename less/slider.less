@@ -2,12 +2,15 @@
     width: 260px;
     margin: 0 auto;
     padding-bottom: 40px;
+    margin-top: 20px;
   }
 
   .slider__comments-title {
     color: @title-color;
     font-size: 25px;
     line-height: 30px;
+    margin-top: -10px;
+    margin-bottom: 25px;
   }
 
   .slider__comments p {
@@ -27,6 +30,8 @@
     color: @font-color;
     font-size: 17px;
     font-weight: 700;
+    margin: 0;
+    margin-top: -24px;
   }
 
   .slider__comments-name a {
@@ -36,9 +41,10 @@
 
   .slider__btn {
     display: inline-block;
-    height: 50px;
-    width: 128px;
-    margin-bottom: 35px;
+    height: 51px;
+    width: 130px;
+    margin-top: 30px;
+    margin-bottom: 38px;
     border: 1px solid @border-color;
     background-color: @body-color;
     font-size: 0;
@@ -64,6 +70,7 @@
     background-position: 0 50%;
     background-repeat: no-repeat;
     margin-bottom: 50px;
+    margin-top: -29px;
   }
 
   .slider__wrapper {
@@ -78,32 +85,40 @@
 
   .slider__comments-title {
     margin: 0 auto;
-    padding: 70px 0 40px;
+    padding: 78px 0 33px;
     font-size: 43px;
     line-height: 50px;
   }
 
   .slider__comments-name {
     width: 334px;
+    padding-top: 61px;
+    padding-bottom: 6px;
   }
 
   .slider__btn {
     position: absolute;
-    right: 50px;
-    bottom: 0;
+    right: 16px;
+    bottom: -28px;
     border: none;
+    width: 55px;
   }
 
   .slider__btn--prev {
-    right: 179px;
+    right: 104px;
   }
 }
 
 @media @desktop-widths {
   .slider {
     margin: 0 auto;
+    margin-top: -21px;
     margin-bottom: 160px;
     width: 1150px;
+  }
+
+  .slider__comments-text {
+    width: 800px;
   }
 
   .slider__wrapper {
@@ -115,5 +130,16 @@
   .slider__comments-title {
     font-size: 53px;
     line-height: 57px;
+    padding: 71px 0 31px;
+  }
+
+  .slider__comments-name {
+    padding-top: 42px;
+    padding-bottom: 55px;
+    width: 240px;
+  }
+
+  .slider__btn {
+    bottom: 20px;
   }
 }
