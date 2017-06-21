@@ -237,16 +237,18 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    width: 500px;
+    width: 508px;
     margin: auto;
     padding: 40px 0;
-    padding-left: 150px;
+    padding-left: 158px;
   }
 
   .form-order__checkbox {
     display: flex;
     flex-wrap: wrap;
+    margin-bottom: -5px;
   }
+
   .form__wrapper--last {
     position: relative;
     width: 668px;
@@ -258,6 +260,7 @@
     font-size: 19px;
     line-height: 18px;
     padding: 32px 40px 0px 88px;
+    width: 100%;
   }
 
   .form-order__checkbox-label {
@@ -286,8 +289,8 @@
 
   .form-order__legend {
     position: absolute;
-    top: 71px;
-    left: -10px;
+    top: 72px;
+    left: -2px;
     width: 160px;
   }
 
@@ -295,42 +298,19 @@
     display: none;
   }
 
-  .form-order__user-name-label {
-    padding: 20px 0 18px 19px;
-  }
-
-  .form-order__user-name-label:first-of-type {
-    width:40px;
-  }
-
-  .form-order__user-name-input {
-    width: 376px;
-    margin-bottom: 20px;
-    margin-top: -53px;
-    margin-left: 142px;
-  }
-
-  .form-order__user-name-input:first-of-type {
-    width: 430px;
-    margin-left: 90px;
-  }
-
-  .form-order__user-name-input:last-of-type {
-    margin-bottom: 10px;
-  }
   .form-order__legend--checkbox {
     top: 67px;
-   left: -11px;
+   left: -2px;
   }
 
   .form-order__legend--user-name {
-    top: 59px;
-    left: -1px
+    top: 65px;
+    left: -2px
   }
 
   .form-order__legend--tel {
     top: 66px;
-    left: -17px;
+    left: -2px;
   }
 
   .form-order__item--tel {
@@ -343,9 +323,33 @@
     padding-bottom: 14px;
   }
 
+  .form-order__user-name {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: -5px;
+    width: 100%;
+  }
+
+  .form-order__user-name-label {
+    padding-right: 35px;
+    padding-top: 25px;
+    padding-left: 9px;
+  }
+
+  .form-order__user-name-label:first-of-type {
+    padding-right: 27px;
+  }
+
+  .form-order__user-name-input {
+    flex-shrink: 1;
+    width: 100%;
+    min-height: 57px;
+    margin-bottom: 15px;
+  }
+
   .form-order__legend--emil {
     top: 4px;
-    left: -4px;
+    left: 1px;
   }
 
   .form-order__legend--miscellaneous {
@@ -359,6 +363,7 @@
     height: 20px;
     padding-bottom: 17px;
     margin-bottom: 36px;
+    margin-left: 8px;
   }
 
   .form-order__email-input {
@@ -369,7 +374,7 @@
     width: 466px;
     min-height: 82px;
     margin-bottom: 30px;
-    margin-left: 16px;
+    margin-left: 9px;
     margin-top: 11px;
     padding: 9px 16px;
   }
@@ -439,17 +444,30 @@
 
   .form__wrapper--last {
     padding: 0 175px;
+    margin-bottom: 60px;
   }
 
   .form-order__user-name {
     width: 700px;
-    margin-top: 13px;
+    margin-top: -9px;
+  }
+
+  .form-order__user-name-label {
+    margin-left: -20px;
+  }
+
+  .form-order__user-name-input {
+    width: 573px;
+  }
+
+  .form-order__user-name-input:first-of-type {
+    width: 628px;
   }
 
   .form-order__text {
     width: 700px;
     margin: auto;
-    margin-top: 125px;
+    margin-top: 120px;
     margin-bottom: -10px;
   }
 
@@ -480,30 +498,6 @@
   .form-order__legend--emil {
     top: 19px;
     left: 46px;
-  }
-
-  .form-order__user-name-label {
-    margin-top: 0px;
-    margin-left: -30px;
-  }
-
-  .form-order__user-name-label:first-of-type {
-    width: 100%;
-    padding-left: 0;
-    margin-left: -11px;
-  }
-
-  .form-order__user-name-input {
-    margin-left: 114px;
-    width: 573px;
-    margin-bottom: 37px;
-    height: 37px;
-    margin-top: -32px;
-  }
-
-  .form-order__user-name-input:first-of-type {
-    margin-left: 60px;
-    width: 627px;
   }
 
   .form-order__checkbox-label::before {
@@ -541,7 +535,7 @@
   .form__info {
     width: 334px;
     margin-left: 351px;
-    margin-top: -12px;
+    margin-top: -13px;
     order: 2;
     text-align: right;
     }
