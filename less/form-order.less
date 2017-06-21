@@ -105,6 +105,16 @@
     border-radius: 50%;
   }
 
+  .form-order__checkbox-label:hover::before,
+  .form-order__radio-label:hover::before {
+    border-color: @color-menu;
+  }
+
+  .form-order__checkbox-label:active::before,
+  .form-order__radio-label:active::before {
+    border-color: #d7d7d7;
+  }
+
   .form-order__checkbox-input,
   .form-order__radio-input {
     position: absolute;
@@ -118,6 +128,11 @@
     padding: 10px;
     border: 2px solid @font-color;
     margin-top: -5px;
+    outline: none;
+  }
+  .form-order__miscellaneous-textarea:hover,
+  .form-order__miscellaneous-textarea:active {
+    border-color: @color-menu;
   }
 
   .form-order__email-label,
@@ -194,6 +209,7 @@
 
   .form-order__tel-input,
   .form-order__email-input {
+    position: relative;
     display: block;
     width: 260px;
     height: 26px;
@@ -202,6 +218,24 @@
     border-left: none;
     border-right: none;
     border-bottom: 2px solid @font-color;
+    outline: none;
+    background-position: 100% 50%;
+    background-repeat: no-repeat;
+  }
+
+  .form-order__tel-input:hover,
+  .form-order__email-input:hover,
+  .form-order__tel-input:active,
+  .form-order__email-input:active {
+    border-color: @color-menu;
+  }
+
+  .form-order__tel-input {
+    background-image: url(/img/icon-phone.svg);
+  }
+
+  .form-order__email-input {
+    background-image: url(/img/icon-mail.svg);
   }
 
   .form-order__legend--tel,

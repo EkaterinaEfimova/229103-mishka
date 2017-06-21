@@ -11,10 +11,31 @@
     background-color: @body-color;
   }
 
+  .btn:hover {
+    color: @body-color;
+    background-color: #444444;
+  }
+
+  .btn:active {
+    color: @body-color;
+    opacity: 0.3;
+  }
+
   .btn--basket {
     width: 146px;
     padding: 9px 21px;
     margin-bottom: 31px;
+  }
+
+  .btn__popup-basket {
+    color: @body-color;
+    background-color: @color-menu;
+    border-color: @color-menu;
+    margin-bottom: 44px;
+  }
+
+  .btn__form {
+    outline: none;
   }
 
 @media @tablet-widths {

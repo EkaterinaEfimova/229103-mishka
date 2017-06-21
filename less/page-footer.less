@@ -49,18 +49,21 @@
     padding-top: 37px;
     padding-left: 35px;
     padding-bottom: 30px;
-    font-size: 19px;
-    line-height: 18px;
-    font-weight: 700;
     margin-bottom: 0;
   }
 
   .page‐footer__copyright‐link {
+    font-size: 19px;
+    line-height: 18px;
+    font-weight: 700;
+  }
+
+  .page‐footer__copyright‐link span {
     position: relative;
     font-size: 0;
   }
 
-  .page‐footer__copyright‐link::after {
+  .page‐footer__copyright‐link span::after {
     position: absolute;
     content: '';
     width: 45px;
@@ -70,6 +73,10 @@
     background-image: url(/img/htmlacademy.svg);
     background-position: 50% 50%;
     background-repeat: no-repeat;
+  }
+
+  .page‐footer__copyright‐link:active {
+    opacity: 0.3;
   }
 
   .page-footer__logo {

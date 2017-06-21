@@ -39,6 +39,15 @@
     font-weight: 500;
   }
 
+  .slider__comments-name a:hover {
+    color: @color-menu;
+  }
+
+  .slider__comments-name a:active {
+    color: @color-menu;
+    opacity: 0.3;
+  }
+
   .slider__btn {
     display: inline-block;
     height: 51px;
@@ -51,6 +60,15 @@
     background-image: url(../img/icon-left-arrow.svg);
     background-position: 50% 50%;
     background-repeat: no-repeat;
+    outline: none;
+  }
+
+  .slider__btn:hover {
+    opacity: 0.6;
+  }
+
+  .slider__btn:active {
+    opacity: 0.3;
   }
 
   .slider__btn--next {
